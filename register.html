@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Regence</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="classification" content="medical healthcare telehealth telemedicine"/>
+	<meta name="description" content="Together Health Network - Trimedx Benefits, employee Healthcare with MDLIVE Find a web MD Online, ask a provider medical questions with Telehealth – Telemedicine.">
+	<meta http-equiv="x-ua-compatible" content="ie=edge">
+	<!--Bootstrap-->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+	<link href="https://fonts.googleapis.com/css?family=Encode+Sans:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Encode+Sans+Condensed:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+
+	<link href="assets/stylesheets/style.css" rel="stylesheet" type="text/css">
+	<script src="assets/scripts/common.js"></script>
+</head>
+<body>
+	<div class="fp-container">
+		<div id="header">
+	    <div class="cell-wrapper">
+        <div class="wrapper">
+          <div class="logo float-left">
+            <a href="index.html"><img src="assets/images/regence_logo.svg" alt="Regence"></a>
+          </div>
+		      <div class="mdl_logo float-right">
+        		<img src="assets/images/mdl_logo.svg" alt="MDLIVE Inc.">
+					</div>
+          <div class="clearfix"></div>
+    		</div>
+        <div class="sign_line">
+        	<div class="wrapper">
+	        	<span>Already Registered?</span>
+	        	<a href="sign_in.html">Sign In</a>
+	        </div>
+        </div>
+      </div>
+    </div>
+    <div id="register_content">
+      <div class="cell-wrapper">
+      	<img src="assets/images/wave_roger1.jpg" class="wave_img">
+        <div class="wrapper">
+          <div class="page-wrapper">
+          	<div class="register_text">
+          		<div class="line1">Convenient, affordable online doctor visits are now part of your health plan</div>
+          		<div class="line2">Your copay for MDLIVE online visits:</div>
+          	</div>
+          	<div class="copay_tiles">
+          		<div class="row">
+          			<div class="mx-auto card">
+          				<div class="tile card-body">
+          					<h3>Medical Visits</h3>
+          					<div class="cost">$42 or less</div>
+          					<div class="cost_description">
+          						Your cost will be lower if you have already met your plan's deductible.
+          					</div>
+          				</div>
+          			</div>
+          			<div class="mx-auto card">
+          				<div class="tile card-body">
+          					<h3>Behavioral Health Care</h3>
+          					<div class="cost">$0</div>
+          					<div class="cost_description">
+          						Online behavioral health counseling sessions are provided by licensed mental health professionals. 
+          					</div>
+          				</div>
+          			</div>
+          			<div class="mx-auto card">
+          				<div class="tile card-body">
+          					<h3>Behavioral Health Care</h3>
+          					<div class="description">
+          						Online therapy and counseling sessions are also covered by your health plan. For cost information, call MDLIVE Customer Service:<br><b>1-888-725-3097</b>
+          					</div>
+          				</div>
+          			</div>
+          		</div>
+          	</div>
+        		<form id="RegisterForm" action="">
+          		<h3>To complete your free MDLIVE registration and have 24/7 access to online doctor visits, specify a user name and password—that’s it!!</h3>
+	          	<div class="register-form">
+		          	<div class="register_errors_container">
+		          		<div class="register-error">
+		          			<img src="assets/images/error.png" alt="error">
+		          			<span>Unable to verify your account, please try again.</span>
+		          		</div>
+		          	</div>
+       					<label>Username:</label>
+	          		<div class="form-cell">
+	          			<input type="text" name="" placeholder="Username" id="fp_username" name="signup_userid">
+	          			<div class="suggested">Suggested</div>
+	          		</div>
+        				<label>Password:</label>
+                <div class="password hint shadow">
+                </div>
+	          		<div class="form-cell">
+	          			<input placeholder="Password" id="fp_password" type="password" name="signup_password" maxlength="15">
+	          			<img src="assets/images/info.png" data-toggle="tooltip" data-placement="bottom"  data-html="true" title="• Use a password different from your username<br>• Use a combination of at least 8 letters and numbers, or special characters (#,&,!)<br>• Password is case-sensitive">
+                	<div id="passStrength"></div>
+                  <ul id="password_errors" class="guidelines">
+                    <li class="ucheck1 guideline-error">Must be different from your Username</li>
+                    <li class="ucheck2 guideline-error">Must be between 8 to 15 characters</li>
+                    <li class="ucheck3 guideline-error">Must contain at least one letter</li>
+                    <li class="ucheck4 guideline-error">Must have a number 0-9</li>
+                  </ul>
+	          		</div>
+        				<label>Confirm Password:</label>
+	          		<div class="form-cell">
+	          			<input placeholder="Confirm Password" id="fp_confirm_password" type="password" name="signup_confirmpassword" maxlength="15">
+                  <ul id="confirm_password_errors" class="guidelines">
+                    <li class="guideline-error">Passwords must match</li>
+                  </ul>
+	          		</div>
+		          	<div class="form-buttons"><input type="submit" name="" id="registrationComplete" value="COMPLETE" disabled="disabled"></div>
+	          	</div>
+        		</form>
+<script type="text/javascript">
+$(document).ready(function() {
+    var treatments = ['Acne', 'Bladder infection or urinary tract infection (UTI)', 'Burn or sunburn'
+    , 'Constipation', 'Cough, cold, allergy or chest infection', 'Ear pain', 'Eye pain, eye bump or irritation', 'Flu', 'Heartburn of acid reflux', 'Migraine or headache', 'Mouth sores', 'Rashes and other skin conditions', 'Sinus pain or pressure', 'Sore throat', 'Yeast infection', 'And more!'];
+    var tList = $('.treatments ul.sm').html('')
+    $.each(treatments, function(i)
+    {
+        var treatment = $('<li><span>'+ treatments[i] +'</span></li>').appendTo(tList);
+    });
+});
+</script>
+            <div class="treatments">
+              <ul class="sm"></ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="copay_height_adjust"></div>
+    </div>
+		<div id="footer">
+		  <div class="cell-wrapper">
+		    <div class="wrapper">
+		      <div class="group_footer_left">
+		        <div class="copyright">
+		        	<img src="assets/images/mdl_logo_powered.svg" alt="MDLIVE Inc.">
+		          <div class="legal">
+		            MDLIVE is a separate and independent company from that provides services for Regence BlueCross BlueShield of Oregon members <br>Copyright © 2019 MDLIVE Inc. All Rights Reserved. Version 2.21
+		            <ul class="legal-links">
+		              <li class="privacy"><a href="privacy_policy.html" title="Privacy Policy">Privacy Policy</a></li>
+		              <li class="terms"><a href="terms_of_use.html" title="Terms of Use">Terms of Use</a></li>
+		              <li class="hipaa"><a href="disclaimers.html" title="Disclaimers">Disclaimers</a></li>
+		              <li class="ndnotice"><a href="notice-of-non-discrimination.html" title="Notice of Non-Discrimination">Notice of Non-Discrimination</a></li>
+		            </ul>
+		          </div>
+		        </div>
+		      </div>
+		      <div class="group_footer_right">
+	        	Copyright © 2019 MDLIVE, Inc. All rights reserved. Copyright © 2019 MDLIVE Medical Group, PA. All rights reserved. MDLIVE Medical Group, PA provides the clinical services for MDLIVE. MDLIVE Medical Group, PA is an independent entity. <br><br>
+	        	Regence BlueShield of Oregon is an independent Licensee of the Blue Cross and Blue Shield Association.
+		      </div>
+		      <div class="clearfix"></div>
+		    </div>
+		  </div>
+		</div>
+	</div>
+</body>
+</html>

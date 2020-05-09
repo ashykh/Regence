@@ -1,0 +1,1126 @@
+body {
+  margin:0;
+  padding:0;
+  font-family: "Encode Sans", sans-serif;
+  font-size: 16px;
+  background: #fff;
+  min-width: 320px;
+ }
+* {
+  box-sizing:border-box;
+}
+
+.m-auto {margin:auto!important;}
+.owh {overflow:hidden;}
+
+.clearfix {
+  clear: both;
+}
+.clearfix:after {
+  display:block;
+  float:none;
+  content:"";
+  clear:both;
+}
+b, strong {
+  font-weight: 600;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.no_padding {
+  padding: 0;
+}
+
+/*Modal*/
+.modal-dialog {
+  max-width: 660px;
+}
+.modal-content {
+  box-shadow: 0 0 37.5px 12.5px rgba(0,0,0,0.25);
+  border-radius: 0;
+}
+.modal-footer {
+  text-align: center;
+  border: 0;
+  display: block;
+  padding: 2rem;
+}
+.modal-footer button {
+  border-radius: 6px;
+  background-color: #03275B;
+  color: #FFF;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+  line-height: 1.2;
+  text-transform: uppercase;
+  font-size: 20px;
+  border: 0;
+  font-size: 17px;
+  min-width: 150px;
+  outline: none;
+  height: 55px;
+  font-family: "Encode Sans", sans-serif;
+}
+.dashboard_modal img {
+  width: 100%;
+  height: auto;
+}
+.modal-text {
+  font-size: 1.8vw;
+  padding: 0 45px;
+  line-height: 1.4;
+}
+.modal-text h3 {
+  color: #0379CE;
+  font-weight: 600;
+  font-size: 2.4vw;
+  margin: 6% 0 2%;
+}
+.modal-text ul li {
+  margin-bottom: 4%;
+  padding-left: 30px;
+  position: relative;
+}
+.modal-text ul li.narrow {
+  margin-bottom: 1%;
+}
+.modal-text ul li:before {
+  display: block;
+  width: 15px;
+  height: 15px;
+  background: #0379CE;
+  content: "";
+  position: absolute;
+  top: 9px;
+  left: 0;
+}
+.modal-text .disclaimer {
+  font-size: 14px;
+}
+.video-container {
+  position: relative;
+  padding-bottom: 56.25%;
+  padding-top: 30px; height: 0; overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+.cell-wrapper {
+  display: table-cell;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.fp-container {
+  display: table;
+  height: 100%;
+  width: 100%;
+}
+.wrapper {
+  margin: 0 15px;
+}
+#header, #content, #footer {
+  display: table-row;
+  vertical-align: top;
+  padding: 0;
+}
+
+#header {
+  background: #fff;
+  padding: 0;
+  position: relative;
+  z-index: 2;
+}
+
+#header img {
+  margin: 30px 0;
+}
+
+#header .logo img {
+  height: 76px;
+  width: auto;
+  margin-top: 35px;
+}
+#header .mdl_logo img {
+  height: 86px;
+  width: auto;
+}
+.sign_line {
+  background: #015888;
+  text-align: right;
+  color: #FFF;
+  font-size: 20px;
+  padding: 13px 0;
+  font-weight: 500;
+}
+.sign_line a {
+  color: #FFF;
+  text-decoration: none;
+  padding: 0px 0 2px;
+  text-align: center;
+  display: inline-block;
+  border: 2px solid #FFF;
+  border-radius: 6px;
+  font-size: 21px;
+  vertical-align: middle;
+  margin-left: 30px;
+  width: 140px;
+}
+.sign_line span {
+  display: inline-block;
+  vertical-align: middle;
+}
+#content {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  background: #FFF;
+}
+
+#footer {
+  background: #404041;
+  color: #fff;
+  margin: 0 auto;
+  width: 100%;
+  font-family: "Encode Sans Condensed", sans-serif;
+  font-size: 16px;
+  line-height: 23px;
+}
+.group_footer_left {
+  float: left;
+  width: 38%;
+  padding: 25px 0 30px;
+}
+.group_footer_right {
+  float: right;
+  padding: 65px 0 30px;
+  width: 47%;
+}
+.copyright {
+  position: relative;
+  top: 0px;
+  left: 0px;
+}
+.copyright img {
+  width: 180px;
+  height: auto;
+  margin-bottom: 3px;
+}
+.copyright .legal {
+    left: 0px;
+    margin-top: 10px;
+    display: block;
+    float: none;
+}
+.legal-links {
+  margin-top: 5px;
+}
+.legal ul li {
+  display: inline;
+  position: relative;
+}
+.legal a, .legal a:visited, .legal a:hover, .legal a:visited:hover {
+  color: #fff;
+  text-decoration: underline;
+  white-space: nowrap;
+}
+.legal a:hover {
+  text-decoration: none;
+}
+.legal ul li.privacy:after, .legal ul li.terms:after, .legal ul li.hipaa:after {
+  content: " | ";
+  padding: 0px 8px;
+}
+
+/*Forms*/
+.form-cell {
+  min-height: 55px;
+  position: relative;
+}
+input[type="text"], input[type="number"], input[type="password"] {
+  line-height: 45px;
+  height: 45px;
+  padding: 0 10px;
+  font-size: 17px;
+  background: #FFF;
+  border: 0;
+  outline: none;
+  font-family: "Encode Sans", sans-serif;
+}
+input[type="number"] {
+  padding: 0 0 0 10px;
+}
+input[type="text"][readonly], input[type="number"][readonly], input[type="password"][readonly] {
+  opacity: .7;
+}
+
+.form-cell input {
+  width: 100%;
+}
+.date-row input {
+  float: left;
+}
+.date-row input:nth-child(1) {
+  width: 50%;
+  margin-right: 1%;
+}
+.date-row input:nth-child(2) {
+  width: 20%;
+  margin-right: 1%;
+}
+.date-row input:nth-child(3) {
+  width: 28%;
+  float: right;
+}
+label {
+  margin-bottom: 3px;
+  font-size: 18px;
+  font-weight: 500;
+}
+.copay-form label {
+  color: #FFF;
+}
+.form-buttons {
+  text-align: center;
+  margin-top: 30px;
+}
+.form-buttons input[type="submit"] {
+  display: inline-block;
+  background-color: #F16624;
+  border-radius: 80px;
+  color: #FFF;
+  padding: 10px 30px;
+  font-size: 22px;
+  text-decoration: none;
+  text-align: center;
+  border: 0;
+  outline: none;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.form-buttons input[type="submit"][disabled] {
+  opacity: .7
+}
+[data-toggle="tooltip"] {
+  position: absolute;
+  right: 10px;
+  top: 13px;
+  width: 20px;
+}
+.tooltip.show {
+  opacity: 1;
+}
+.tooltip .arrow:before, .bs-tooltip-auto[x-placement^=top] .arrow::before, .bs-tooltip-top .arrow::before {
+  border-bottom-color: #FFF;
+  border-top-color: #FFF;
+}
+.tooltip-inner {
+  text-align: left;
+  line-height: 1.3;
+  background: #FFF;
+  color: inherit;
+  box-shadow: 0 0 12.8px 2.3px rgba(0,0,0,0.25);
+}
+
+/*Dashboard*/
+.wave_img {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  z-index: 0;
+}
+.dashboard_section_1 {
+  position: relative;
+  z-index: 1;
+  color: #FFF;
+  font-weight: 600;
+}
+.dashboard_section_1 .line1 {
+  font-size: 2.7vw;
+  margin: 8% 0 5%;
+  font-weight: 700
+}
+.dashboard_section_1 .line2 {
+  font-size: 4.5vw;
+  margin: 0 0 4%;
+  line-height: 100%;
+}
+.dashboard_section_1 .line2 span {
+  font-size: 3.2vw;
+  display: block;
+}
+.dashboard_section_1 .line2:after {
+  display: block;
+  content: "\00a0";
+  background: #8AC2EF;
+  width: 20%;
+  font-size: 1.3vw;
+  margin-top: 2%;
+  line-height: normal;
+}
+.dashboard_section_1 .line3 {
+  width: 60%;
+  font-weight: 500;
+  font-size: 2.3vw;
+  line-height: 120%;
+}
+.dashboard_section_1 .check_copay {
+  display: inline-block;
+  background-color: #F16624;
+  border-radius: 80px;
+  color: #FFF;
+  padding: 1.5% 5%;
+  font-size: 2.4vw;
+  text-decoration: none;
+  text-align: center;
+  line-height: 115%;
+  margin: 3% 0 0 20%;
+}
+.dashboard_section_1 .check_copay span {
+  display: block;
+  text-transform: uppercase;
+}
+.dashboard_doctors {
+  position: relative;
+  z-index: 1;
+  text-align: center;
+}
+.dashboard_doctors ul {
+  display: inline-block;
+  margin: 3.5% -3% 30px;
+}
+.dashboard_doctors li {
+  display: inline-block;
+  vertical-align: top;
+  width: 18%;
+  margin: 0 .8%;
+  font-size: 1.8vw;
+}
+.dashboard_doctors li b {
+  display: block;
+  margin-top: 12%;
+  font-weight: 600;
+  line-height: 125%;
+}
+.dashboard_doctors img {
+  width: 100%;
+  height: auto;
+}
+.dashboard_doctors div {
+  font-size: 2.2vw;
+  margin-bottom: 40px;
+  line-height: 1.3;
+}
+.dashboard_doctors div b {
+  display: block;
+}
+.dashboard_section_2 {
+  text-align: center;
+  background-color: #0379CE;
+  border: 1px solid #979797;
+  color: #FFF;
+  font-size: 2.8vw;
+  padding: 50px 0;
+}
+.dashboard_section_2 .wrapper ul {
+  background-color: #FFFFFF;
+  margin: 15px auto 0;
+  font-size: 4vw;
+  font-weight: 600;
+  color: #F26522;
+  min-width: 60%;
+  display: inline-block;
+  overflow: hidden;
+}
+.dashboard_section_3 {
+  text-align: center;
+  padding: 50px 0;
+}
+.dashboard_section_3 img {
+  width: 95%;
+  height: auto;
+  margin-bottom: 30px
+}
+.dashboard_section_3 h2 {
+  font-size: 3vw;
+  color: #0379CE;
+  font-weight: 700;
+}
+.dashboard_section_3 h3 {
+  font-size: 2.5vw;
+  color: #0379CE;
+  font-weight: 600;
+}
+.dashboard_section_3 .row > div {
+  margin-top: 50px;
+}
+.dashboard_section_3 span {
+  font-size: 1.8vw;
+  display: block;
+  margin: 20px 0 15px;
+  width: 95%;
+}
+.dashboard_section_3 a {
+  display: table;
+  border-radius: 6px;
+  background-color: #03275B;
+  color: #FFF;
+  text-decoration: none;
+  font-weight: 600;
+  text-align: center;
+  width: 45%;
+  padding: 2% 3%;
+  line-height: 1.2;
+  text-transform: uppercase;
+  margin: auto;
+}
+.dashboard_section_3 a span {
+  display: table-cell;
+  vertical-align: middle;
+  font-size: 1.4vw;
+  height: 4vw;
+  margin: 0;
+}
+.dashboard_section_3 .txt-block {
+  height: 38%;
+}
+.dashboard_section_4 {
+  text-align: center;
+  padding: 50px 0;
+  background-color: #F3F3F3;
+  font-size: 2.8vw;
+  font-weight: 600;
+  line-height: 1.2;
+}
+.dashboard_section_4 .register {
+  display: inline-block;
+  background-color: #F16624;
+  border-radius: 80px;
+  color: #FFF;
+  padding: 1.5% 8%;
+  font-size: 2.4vw;
+  text-decoration: none;
+  text-align: center;
+  line-height: 115%;
+  margin: 5% auto 0;
+}
+.dashboard_section_4 .register span {
+  display: block;
+  text-transform: uppercase;
+}
+.dashboard_section_5 {
+  text-align: center;
+  padding: 50px 0 10px;
+  border: 1px solid #979797;
+  background-color: #03275B;
+  font-size: 3vw;
+  font-weight: 600;
+  line-height: 1.2;
+  color: #FFF;
+}
+.dashboard_section_5 .care_wrapper {
+  text-align: left;
+  width: 85%;
+  margin: 30px auto 0;
+}
+.dashboard_section_5 .treatments {
+  background: #FFF;
+}
+.dashboard_section_5 .treatments ul {
+  background-color: #0379CE;
+  display: block;
+  list-style: none;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 40px 20px;
+  line-height: 1.5;
+  margin-bottom: 40px;
+}
+.dashboard_section_5 h3 {
+  padding: 10px 20px;
+  color: #0379CE;
+  font-size: 2vw;
+  font-weight: 600;
+}
+.dashboard_section_6 {
+  padding: 50px 0;
+  font-size: 1.8vw;
+  line-height: 1.2;
+  color: #0379CE;
+}
+.dashboard_section_6 h3 {
+  font-size: 2.7vw;
+  font-weight: 700;
+  margin-bottom: 2%;
+}
+.dashboard_section_6 .app_image {
+  width: 80%;
+  height: auto;
+}
+.dashboard_section_6 .app_download {
+  margin-top: 5%;
+}
+.dashboard_section_6 .app_download img {
+  width: 100%;
+  height: auto;
+}
+
+/*Check Copay*/
+.copay_text {
+  position: relative;
+  z-index: 1;
+  color: #FFF;
+  width: 70%;
+}
+.copay_text .line1 {
+  font-size: 3.4vw;
+  margin: 3% 0 3%;
+  font-weight: 700;
+  line-height: 1.3;
+}
+.copay_text .line2 {
+  font-size: 2.4vw;
+  margin: 0 0 4%;
+  line-height: 100%;
+}
+.copay-form {
+  width: 67%;
+  position: relative;
+  z-index: 1;
+}
+.copay_errors_container, .register_errors_container {
+  min-height: 35px;
+  position: relative;
+  z-index: 1;
+  margin-bottom: 10px;
+}
+.register_errors_container {
+  min-height: 0;
+}
+.copay-error, .register-error {
+  color: #FF3366;
+  font-size: 17px;
+  font-weight: 500;
+  background: #FFF;
+  padding: 7px 10px 7px 40px;
+  line-height: 20px;
+  position: relative;
+}
+.register-error {
+  background: none;
+}
+.copay-error img, .register-error img {
+  width: 22px;
+  height: auto;
+  margin-right: 5px;
+  position: absolute;
+  left: 10px;
+  top: 6px;
+}
+.wave_img.swap + .wave_img.swap {
+  display: none;
+}
+.check_method_or {
+  text-align: center;
+}
+.check_method_or img {
+  width: 70%;
+  height: auto;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -55%);
+}
+.copay_height_adjust {
+  height: 20vw;
+}
+#check_method_2 > :first-child {
+  margin-top: 40px;
+}
+
+/*Registration*/
+#register_content {
+  background: #F4F4F4;
+}
+.register_text {
+  position: relative;
+  z-index: 1;
+  color: #FFF;
+}
+.register_text .line1 {
+  font-size: 3.4vw;
+  margin: 3% 0 3%;
+  font-weight: 700;
+  line-height: 1.3;
+  width: 70%;
+}
+.register_text .line2 {
+  font-size: 2.6vw;
+  margin: 0 0 4%;
+  line-height: 100%;
+  font-weight: 600;
+  width: 70%;
+}
+.copay_tiles {
+  width: 67%;
+  position: relative;
+  z-index: 1;
+}
+.copay_tiles .tile {
+  background: #FFF;
+  padding: 18px;
+  text-align: center;
+  min-height: 22vw;
+}
+.copay_tiles .tile h3 {
+  font-weight: 600;
+  font-size: 2.3vw;
+  color: #1D2959;
+  margin-bottom: 20px;
+}
+.copay_tiles .tile .cost {
+  font-size: 4.4vw;
+  color: #F26723;
+  font-weight: 600;
+}
+.copay_tiles .cost_description, .copay_tiles .description {
+  font-size: 1.5vw;
+  font-weight: 500;
+}
+.copay_tiles .description {
+  color: #F26723;
+}
+#RegisterForm h3 {
+  font-size: 2.1vw;
+  margin: 26% 0 0;
+  font-weight: 600;
+  line-height: 1.3;
+  color: #0379CE;
+  text-align: center;
+}
+.register-form {
+  max-width: 540px;
+  margin: 30px auto 0;
+}
+.register-form .suggested {
+  color: #078563;
+  font-size: 14px;
+  position: absolute;
+  right: 10px;
+  top: 12px;
+}
+.register-form .guidelines {
+  font-size: 14px;
+  margin: 5px 10px 10px;
+}
+.register-form #passStrength {
+  color: #FF9900;
+  font-size: 14px;
+  position: absolute;
+  right: 50px;
+  top: 12px;
+}
+.register-form #passStrength.weak {
+  color: #BD1600;
+}
+.register-form #passStrength.strong {
+  color: #4bb544;
+}
+.register-form .guidelines {
+  display: none;
+}
+.register-form .guidelines li {
+  display: none;
+}
+.register-form .guidelines li.guideline-error {
+  color: red;
+  display: block;
+}
+/*Static Pages*/
+.static-page-wrapper {
+  padding: 60px 0;
+}
+.static-page-wrapper h1 {
+  line-height: 1.3;
+  color: #0379CE;
+  font-size: 34px;
+  font-weight: 500;
+  margin-bottom: 30px;
+}
+.static-page-wrapper .form-wrapper {
+  max-width: 420px;
+}
+.static-page-wrapper input[type="text"], .static-page-wrapper input[type="number"], .static-page-wrapper input[type="password"] {
+  border: 1px solid #cacaca;
+}
+.static-page-wrapper .acct {
+  padding-top: 20px;
+}
+.static-page-wrapper .emergency_notice {
+  font-weight: 600;
+  padding: 30px 0 0;
+  color: #D0112B;
+  font-size: 17px;
+}
+.static-page-wrapper .assistance_notice {
+  padding: 30px 0 0;
+}
+.static-page-wrapper .assistance_notice b {
+  font-size: 20px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.static-page-wrapper .assistance_notice span {
+  margin-top: 5px;
+  display: inline-block;
+}
+.static-page-wrapper form .error {
+  font-size: 14px;
+  font-weight: 500;
+  color: #D0112B;
+}
+.disclaimers-content-list li {
+  margin-bottom: 15px;
+}
+.legal-content ul {
+  list-style: disc;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 20px;
+}
+
+@media (min-width: 768px) {
+  html, body {
+    height: 100%;
+  }
+  .wrapper {
+    margin: 0 5%;
+  }
+}
+
+@media (max-width: 1200px) {
+  .form-cell {
+    min-height: 50px;
+  }
+  input[type="text"], input[type="number"], input[type="password"]  {
+    line-height: 40px;
+    height: 40px;
+  }
+  .copay_height_adjust {
+    height: 15vw;
+  }
+  [data-toggle="tooltip"] {
+    top: 11px;
+  }
+  .register-form .suggested, .register-form #passStrength {
+    top: 10px;
+  }
+}
+.card {width: 20vw;}
+@media (min-width: 1023px){.card {width: 20vw;}}
+@media (max-width: 1024px) {
+  .group_footer_left {
+    float: none;
+    width: auto;
+    padding: 25px 0 30px;
+  }
+  .group_footer_right {
+    float: none;
+    width: auto;
+    padding: 25px 0 30px;
+  }
+}
+@media (max-width: 1023px) {
+  .copay_text {
+    position: relative;
+    z-index: 1;
+    color: #FFF;
+    width: 65%;
+  }
+  .copay_text .line1 {
+    font-size: 4.3vw;
+    margin: 15% 0 11%;
+  }
+  .copay_text .line2 {
+    font-size: 3.8vw;
+    margin: 0 0 35%;
+    line-height: 1.3;
+  }
+  .copay_text .line3 {
+    font-size: 3.4vw;
+    margin: 0 0 45%;
+    line-height: 1.3;
+  }
+  .copay-form {
+    width: 100%;
+  }
+  .wave_img.swap {
+    display: none;
+  }
+  .wave_img.swap + .wave_img.swap {
+    display: block;
+  }
+  #copay_content {
+    background: #F4F4F4;
+  }
+  .copay-form label {
+    color: #000;
+  }
+  .copay-error {
+    background: none;
+  }
+  .copay_height_adjust {
+    height: 60px;
+  }
+  .copay_tiles {
+    width: 100%;
+  }
+  .register_text .line1 {
+    font-size: 4.5vw;
+    margin: 15% 0 30%;
+    line-height: 1.8;
+    width: 68%;
+  }
+  .register_text .line2 {
+    font-size: 34px;
+    color: #0379CE;
+    text-align: center;
+    margin: 15% 0 30px;
+    width: 100%;
+    line-height: 1.2;
+  }
+  .copay_tiles {
+    width: 540px;
+    margin: auto;
+  }
+  .copay_tiles .tile {
+    min-height: 236px;
+  }
+  .copay_tiles .tile h3 {
+    font-size: 20px;
+  }
+  .copay_tiles .tile .cost {
+    font-size: 40px;
+  }
+  .copay_tiles .cost_description, .copay_tiles .description {
+    font-size: 16px;
+  }
+  #RegisterForm h3 {
+    font-size: 22px;
+    margin: 40px 0 0;
+  }
+}
+
+@media (max-width: 992px) {
+  #header .logo img {
+    height: 66px;
+    margin-top: 35px;
+  }
+  #header .mdl_logo img {
+    height: 76px;
+  }
+  .dashboard_doctors li {
+    margin: 0 .7%
+  }
+  .dashboard_section_5 .care_wrapper {
+    width: auto;
+  }
+
+}
+
+@media (max-width: 768px) {
+  #header img {
+    margin: 20px 0;
+  }
+  #header .logo img {
+    height: 46px;
+    margin-top: 25px;
+  }
+  #header .mdl_logo img {
+    height: 56px;
+  }
+  .dashboard_section_1 .line1 {
+    font-size: 4.2vw;
+    margin: 3% 0 9%;
+  }
+  .dashboard_section_1 .check_copay {
+    margin: 6% 0 70px 33%;
+  }
+  .dashboard_doctors ul {
+    margin: 3.5% 0 0;
+  }
+  .dashboard_doctors li {
+    margin: 0 .8% 35px;
+    min-width: 180px;
+    font-size: 18px;
+  }
+  .dashboard_doctors div {
+    font-size: 17px;
+  }
+  .dashboard_section_3 h2 {
+    font-size: 25px;
+  }
+  .dashboard_section_3 h3 {
+    font-size: 22px;
+  }
+  .dashboard_section_5 .treatments ul {
+    font-size: 16px;
+  }
+  .dashboard_section_6 .app_image {
+    width: 100%;
+  }
+  .dashboard_section_6 {
+    font-size: 16px;
+  }
+  .dashboard_section_6 h3 {
+    font-size: 21px;
+  }
+  .modal-text h3 {
+    font-size: 22px;
+    margin: 6% 0 3%;
+  }
+  .modal-text {
+    font-size: 18px;
+    padding: 0 35px;
+  }
+  .modal-text ul li:before {
+    top: 4px;
+  }
+}
+@media (max-width: 767px) {
+  .dashboard_section_3 span {
+    font-size: 18px;
+  }
+  .dashboard_section_3 a {
+    width: 95%;
+    padding: 3% 4%;
+  }
+  .dashboard_section_3 a span {
+    display: block;
+    font-size: 17px;
+    height: auto;
+  }
+  .dashboard_section_3 .txt-block {
+    height: auto;
+  }
+  .dashboard_section_5 h3 {
+    font-size: 18px;
+  }
+  .check_method_or img {
+    width: 60px;
+    height: auto;
+    position: static;
+    transform: none;
+    margin: 20px 0;
+  }
+  #check_method_2 > :first-child {
+    margin-top: 0;
+  }
+}
+@media (max-width: 575px) {
+  .dashboard_section_6 h3 {
+    margin: 30px 0 15px;
+  }
+  .dashboard_section_3 a {
+      padding: 5% 4%;
+  }
+  .modal-text {
+    padding: 0 15px;
+  }
+  .register_text .line2 {
+    font-size: 24px;
+  }
+  .copay_tiles {
+    width: 100%;
+  }
+  .copay_tiles .tile {
+    min-height: 0;
+    margin-bottom: 30px;
+  }
+  .copay_tiles .tile h3 {
+    font-size: 20px;
+  }
+  .copay_tiles .tile .cost {
+    font-size: 40px;
+  }
+  .copay_tiles .cost_description, .copay_tiles .description {
+    font-size: 16px;
+  }
+  #RegisterForm h3 {
+    font-size: 19px;
+    margin: 0;
+  }
+  .static-page-wrapper h1 {
+    font-size: 26px;
+  }
+  .static-page-wrapper .form-wrapper {
+    max-width: none;
+  }
+  .static-page-wrapper .form-wrapper .form-buttons input {
+    width: 100%;
+  }
+}
+@media (max-width: 480px) {
+  #header img {
+    margin: 15px 0;
+  }
+  #header .logo img {
+    height: 26px;
+    margin-top: 20px;
+  }
+  #header .mdl_logo img {
+    height: 36px;
+  }
+  .sign_line {
+    font-size: 16px;
+  }
+  .sign_line a {
+    width: 100px;
+    font-size: 19px;
+  }
+  .dashboard_section_1 .line3 {
+    width: 66%;
+    font-size: 12px;
+    height: 125px;
+  }
+  .dashboard_section_1 .check_copay {
+    font-size: 4vw;
+    padding: 3% 8%;
+    margin: 100px 0 30px 21%;
+  }
+  .dashboard_section_4 .register {
+    font-size: 4vw;
+    padding: 3% 8%;
+  }
+  .dashboard_section_2, .dashboard_section_4, .dashboard_section_5 {
+    font-size: 18px;
+  }
+  .dashboard_section_2 .wrapper ul {
+    font-size: 25px;
+    min-width: 100%;
+  }
+}
+@media (max-width: 375px) {
+  .dashboard_section_1 .check_copay {
+    margin: 50px 0 30px 21%;
+  }
+  .static-page-wrapper .emergency_notice {
+    font-size: 16px;
+  }
+}
+
+
