@@ -749,6 +749,11 @@ label {
   color: red;
   display: block;
 }
+.card {
+  flex-basis: 0;
+  flex-grow: 1;
+  margin: 0 5px 5px 5px;
+}
 /*Static Pages*/
 .static-page-wrapper {
   padding: 60px 0;
@@ -830,8 +835,6 @@ label {
     top: 10px;
   }
 }
-.card {width: 20vw;}
-@media (min-width: 1023px){.card {width: 20vw;}}
 @media (max-width: 1024px) {
   .group_footer_left {
     float: none;
@@ -886,9 +889,6 @@ label {
   .copay_height_adjust {
     height: 60px;
   }
-  .copay_tiles {
-    width: 100%;
-  }
   .register_text .line1 {
     font-size: 4.5vw;
     margin: 15% 0 30%;
@@ -904,7 +904,7 @@ label {
     line-height: 1.2;
   }
   .copay_tiles {
-    width: 540px;
+    width: 90%;
     margin: auto;
   }
   .copay_tiles .tile {
@@ -1029,6 +1029,11 @@ label {
   }
   #check_method_2 > :first-child {
     margin-top: 0;
+  }
+  .card {
+    flex-direction: row;
+    flex-basis: auto;
+    margin: 0 15px 15px 15px;
   }
 }
 @media (max-width: 575px) {
